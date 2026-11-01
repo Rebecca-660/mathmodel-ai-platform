@@ -1,0 +1,231 @@
+{
+  "scope": "Repository handoff checks; no browser rendering or backend integration test",
+  "passed": 56,
+  "total": 56,
+  "checks": [
+    {
+      "name": "JavaScript syntax: app.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: core.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: i18n-extra.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: i18n-messages.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: i18n.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: locale-runtime.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: preference-controls.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: screens.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: sites-compat.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: teacher-actions.js",
+      "pass": true
+    },
+    {
+      "name": "JavaScript syntax: teacher.js",
+      "pass": true
+    },
+    {
+      "name": "guide.html local link: 操作指南与验收说明.html",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: base.css",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: student.css",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: campus-revision.css",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: preference-controls.css",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: sites-compat.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: core.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: screens.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: app.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: teacher.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: teacher-actions.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: i18n.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: i18n-messages.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: i18n-extra.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: locale-runtime.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: preference-controls.js",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: assets/association-logo.png",
+      "pass": true
+    },
+    {
+      "name": "index.html local link: assets/campus-watercolor-v1.png",
+      "pass": true
+    },
+    {
+      "name": "base.css asset: assets/campus.svg",
+      "pass": true
+    },
+    {
+      "name": "campus-revision.css asset: assets/campus-watercolor-v1.png",
+      "pass": true
+    },
+    {
+      "name": "JSON parses: 三语界面文案表.json",
+      "pass": true
+    },
+    {
+      "name": "JSON parses: 模块与交付边界.json",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: index.html",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: app.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: core.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: screens.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: teacher.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: teacher-actions.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: i18n.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: i18n-extra.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: i18n-messages.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: locale-runtime.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: base.css",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: student.css",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: campus-revision.css",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: preference-controls.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: preference-controls.css",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: sites-compat.js",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: guide.html",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: 模块与交付边界.json",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: 三语界面文案表.json",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: 三语术语与文案对照.html",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: assets/association-logo.png",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: assets/campus-watercolor-v1.png",
+      "pass": true
+    },
+    {
+      "name": "Matches published source: assets/campus.svg",
+      "pass": true
+    }
+  ]
+}
