@@ -2,8 +2,9 @@
 L10N.language=()=>M3.data.preferences.language||'zh';
 L10N.dataText=()=>{const values=new Set();const keys=new Set(['title','name','text','content','notes','feedback','requirements','rubric','rules','description','originalText','originalName','source','body','author','teacher','reason','assessment']);const walk=x=>{if(!x||typeof x!=='object')return;for(const [k,v]of Object.entries(x)){if(keys.has(k)&&typeof v==='string'&&v&&!(k==='title'&&typeof x.done==='boolean'))values.add(v.trim());else if(typeof v==='object')walk(v)}};walk(M3.data);return values};
 L10N.translate=(s,depth=0)=>{
- const lang=L10N.language();if(lang==='zh'||!/[\u3400-\u9fff]/.test(s))return s;const i=lang==='ru'?1:0,raw=s.trim(),pair=L10N.dict[raw];if(pair)return s.replace(raw,pair[i]);
+ const lang=L10N.language();if(lang==='zh'||!/[\u3400-\u9fff]/.test(s))return s;const i=lang==='ru'?1:0,raw=s.trim(),pair=L10N.dict[raw];
  if(L10N.currentData?.has(raw)||L10N.dataParts?.has(raw)||L10N.currentData?.has(raw.replace(/^●\s*/,'')))return s;
+ if(pair)return s.replace(raw,pair[i]);
  if(depth>3)return s;
  if(raw.endsWith(' *'))return L10N.translate(raw.slice(0,-2),depth+1)+' *';
  const num=raw.match(/^(\d+\.\s*)(.+)$/);if(num&&L10N.dict[num[2]])return num[1]+L10N.translate(num[2]);

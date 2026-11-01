@@ -46,7 +46,7 @@ M3.act=(act,a={})=>{
   if(M3.commit(()=>{p.stages[i].content=content;if(act==='toggle-stage')p.stages[i].done=!p.stages[i].done;p.updatedAt=M3.now()},act==='save-stage'?'阶段笔记已保存':'阶段完成标记已更新')){delete u.buffers[key];M3.render()}return;
  }
  if(act==='export-project'){if(p)M3.exportText(p.title+'.txt',p.stages.map(s=>s.title+'\n'+s.content+'\n完成标记：'+s.done).join('\n\n'));return}
- if(act==='attach-project')return M3.modalForm('关联已有资料','attach-project',M3.select('选择有权资料','resourceId',d.resources.map(r=>[r.id,r.name]))+note('关联到个人工作区不等于向教师共享；提交时才保存附件快照。'),'关联资料',a.id);
+ if(act==='attach-project')return M3.modalForm('关联已有资料','attach-project',M3.select('选择有权资料','resourceId',M3.studentResources().map(r=>[r.id,r.name]))+note('关联到个人工作区不等于向教师共享；提交时才保存附件快照。'),'关联资料',a.id);
  if(act==='submit-project'){
   if(!p||M3.locked(p))return M3.toast('项目不存在或已锁定');const t=M3.task(p.taskId);if(!t)return M3.toast('该项目尚未关联训练任务');if(!M3.canSubmit(t))return M3.modal('当前不可提交',note('本轮已过截止且不允许提交。旧成果与反馈仍保留；如需重交，请联系教师重新开放。','warning')+b('返回任务','go',{route:'training/'+t.id},'primary'));
   const previous=M3.latest(t.id),next=(previous?.version||0)+1;const unfinished=previous?d.checklists.filter(x=>x.submissionId===previous.id&&!x.done):[];
@@ -199,3 +199,6 @@ document.getElementById('modal').addEventListener('cancel',()=>{if(M3.ui.generat
 window.addEventListener('beforeunload',event=>{if(Object.keys(M3.ui.buffers).some(k=>k.startsWith('stage:')||k.startsWith('draft:'))){event.preventDefault();event.returnValue=''}});
 setInterval(()=>{if(M3.settle()){M3.render();M3.toast('模拟计时已到，本轮已保存成果锁定。')}else document.querySelectorAll('[data-timer]').forEach(el=>{const c=M3.data.competitions.find(c=>c.id===el.dataset.timer);if(c)el.textContent=M3.remaining(c)})},1000);
 M3.route();
+
+// The skip link focuses the existing content, without entering a business route.
+document.querySelector('a.skip')?.addEventListener('click',event=>{event.preventDefault();event.stopPropagation();const main=document.getElementById('main');main.setAttribute('tabindex','-1');main.focus();main.scrollIntoView();});
