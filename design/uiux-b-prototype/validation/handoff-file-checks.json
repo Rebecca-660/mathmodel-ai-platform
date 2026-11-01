@@ -1,7 +1,7 @@
 {
-  "scope": "Repository handoff checks; no browser rendering or backend integration test",
-  "passed": 56,
-  "total": 56,
+  "scope": "Repository handoff checks; text normalized to LF; no browser rendering/backend test",
+  "passed": 57,
+  "total": 57,
   "checks": [
     {
       "name": "JavaScript syntax: app.js",
@@ -132,99 +132,103 @@
       "pass": true
     },
     {
+      "name": "JSON parses: 交付文件清单.json",
+      "pass": true
+    },
+    {
       "name": "JSON parses: 模块与交付边界.json",
       "pass": true
     },
     {
-      "name": "Matches published source: index.html",
+      "name": "Matches published source (LF normalized): app.js",
       "pass": true
     },
     {
-      "name": "Matches published source: app.js",
+      "name": "Matches published source (LF normalized): assets/association-logo.png",
       "pass": true
     },
     {
-      "name": "Matches published source: core.js",
+      "name": "Matches published source (LF normalized): assets/campus-watercolor-v1.png",
       "pass": true
     },
     {
-      "name": "Matches published source: screens.js",
+      "name": "Matches published source (LF normalized): assets/campus.svg",
       "pass": true
     },
     {
-      "name": "Matches published source: teacher.js",
+      "name": "Matches published source (LF normalized): base.css",
       "pass": true
     },
     {
-      "name": "Matches published source: teacher-actions.js",
+      "name": "Matches published source (LF normalized): campus-revision.css",
       "pass": true
     },
     {
-      "name": "Matches published source: i18n.js",
+      "name": "Matches published source (LF normalized): core.js",
       "pass": true
     },
     {
-      "name": "Matches published source: i18n-extra.js",
+      "name": "Matches published source (LF normalized): guide.html",
       "pass": true
     },
     {
-      "name": "Matches published source: i18n-messages.js",
+      "name": "Matches published source (LF normalized): i18n-extra.js",
       "pass": true
     },
     {
-      "name": "Matches published source: locale-runtime.js",
+      "name": "Matches published source (LF normalized): i18n-messages.js",
       "pass": true
     },
     {
-      "name": "Matches published source: base.css",
+      "name": "Matches published source (LF normalized): i18n.js",
       "pass": true
     },
     {
-      "name": "Matches published source: student.css",
+      "name": "Matches published source (LF normalized): index.html",
       "pass": true
     },
     {
-      "name": "Matches published source: campus-revision.css",
+      "name": "Matches published source (LF normalized): locale-runtime.js",
       "pass": true
     },
     {
-      "name": "Matches published source: preference-controls.js",
+      "name": "Matches published source (LF normalized): preference-controls.css",
       "pass": true
     },
     {
-      "name": "Matches published source: preference-controls.css",
+      "name": "Matches published source (LF normalized): preference-controls.js",
       "pass": true
     },
     {
-      "name": "Matches published source: sites-compat.js",
+      "name": "Matches published source (LF normalized): screens.js",
       "pass": true
     },
     {
-      "name": "Matches published source: guide.html",
+      "name": "Matches published source (LF normalized): sites-compat.js",
       "pass": true
     },
     {
-      "name": "Matches published source: 模块与交付边界.json",
+      "name": "Matches published source (LF normalized): student.css",
       "pass": true
     },
     {
-      "name": "Matches published source: 三语界面文案表.json",
+      "name": "Matches published source (LF normalized): teacher-actions.js",
       "pass": true
     },
     {
-      "name": "Matches published source: 三语术语与文案对照.html",
+      "name": "Matches published source (LF normalized): teacher.js",
       "pass": true
     },
     {
-      "name": "Matches published source: assets/association-logo.png",
+      "name": "Matches published source (LF normalized): 三语术语与文案对照.html",
       "pass": true
     },
     {
-      "name": "Matches published source: assets/campus-watercolor-v1.png",
+      "name": "Matches published source (LF normalized): 三语界面文案表.json",
       "pass": true
     },
     {
-      "name": "Matches published source: assets/campus.svg",
+      "name": "Matches published source (LF normalized): 模块与交付边界.json",
       "pass": true
     }
   ]

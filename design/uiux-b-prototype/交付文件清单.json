@@ -135,13 +135,13 @@
     },
     {
       "file": "validation/handoff-file-checks.json",
-      "bytes": 5145,
-      "sha256": "54d6f286c0c8856df1e64ac820cd5901fd60b0c7d0b18aa42049c4efd15beb81"
+      "bytes": 5607,
+      "sha256": "7226e4342cbf721c585b1f0ffd6b6d45db5d78b20c715116f2ba586d3d4c8bb1"
     },
     {
       "file": "VALIDATION.md",
       "bytes": 2210,
-      "sha256": "1ac4c7df439a03782271b68f2e8de378c176fa35264a954049f356991d50ee8d"
+      "sha256": "70e96e3b2cc72d8cddf10516f259f50a751e32d555f0d1c0910ec722ae7f9b83"
     },
     {
       "file": "三语术语与文案对照.html",

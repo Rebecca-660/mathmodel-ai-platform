@@ -4,7 +4,7 @@
 
 2026-11-01重新检查复制后的原型，而非仅引用旧报告：
 
-- 56项文件检查通过：JavaScript语法、HTML本地资源和指南链接、CSS素材引用、JSON解析、与Sites第3版交互代码及素材的一致性。详见 [validation/handoff-file-checks.json](validation/handoff-file-checks.json)。操作指南仅补充交付语境，不改变交互。
+- 57项文件检查通过：JavaScript语法、HTML本地资源和指南链接、CSS素材引用、JSON解析、与Sites第3版交互代码及素材的一致性。详见 [validation/handoff-file-checks.json](validation/handoff-file-checks.json)。操作指南仅补充交付语境，不改变交互。
 - 20项语言与外观控件交互检查通过：三语循环、左右箭头、拖动方向与阈值、忽略纵向滚动和取消手势、键盘操作、外观选择及重绘后保留、三语提示与输入捕获。详见 [validation/control-interaction-results.json](validation/control-interaction-results.json)。
 - 可在已安装Node的电脑上重跑控件检查：从本目录执行 `node validation/check-controls.cjs`。该检查使用隔离的控件环境，不连接GitHub、正式平台或真实业务服务，不等于浏览器端到端测试。
 
